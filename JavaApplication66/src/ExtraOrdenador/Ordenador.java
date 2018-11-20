@@ -50,16 +50,15 @@ public class Ordenador {
                 + "\n Numero de teclas : " + keyboard.getTeclas() + "\n Marca de la pantalla "
                 + ": " + screen.getMarca() + "\n Pulgadas de la pantalla : " + screen.getPulgadas());
     }
+
+
+    //Calculo del precio
+    public double calcularPrecio() {
+        double precio = procesator.getRAM() * 5 + keyboard.getTeclas() * 0.7 + screen.getPulgadas() * 12;
+        if (mouse.getInalambrico() == true) {
+            return Math.round(precio * 1.5);
+        }
+        else
+        return Math.round (precio);
+    }
 }
-
-
-//    Calculo del precio
-//    public double calcularPrecio() {
-//        double precio = procesator.getRAM() * 5 + keyboard.getTeclas() * 0,7 + screen.getPulgadas() * 12;
-//        if (mouse.getInalambrico() == true) {
-//            return Math.round(precio * 1, 5);
-//        }
-//        else
-//        return Math.round (precio);
-//    }
-//}
