@@ -44,8 +44,10 @@ public class Ordenador {
 
     //Visualizacion de los atributos de las clases
     public void visualizarAtributos() {
-        JOptionPane.showMessageDialog(null, " Numero de nucleos : " + procesator.getNucleos() + "\n Numero de ram : " + procesator.getRAM() + "\n Raton Inalambrico : " 
-                + mouse.getInalambrico() + "\n Modelo de Raton : " + mouse.getModelo() + "\n Numero de teclas : " + keyboard.getTeclas() + "\n Marca de la pantalla "
+        JOptionPane.showMessageDialog(null, " Numero de nucleos : " + procesator.getNucleos() + "\n Numero de ram : "
+                + procesator.getRAM() + "\n Raton Inalambrico : " + mouse.getInalambrico()
+                + "\n Modelo de Raton : " + mouse.getModelo()
+                + "\n Numero de teclas : " + keyboard.getTeclas() + "\n Marca de la pantalla "
                 + ": " + screen.getMarca() + "\n Pulgadas de la pantalla : " + screen.getPulgadas());
     }
 }
