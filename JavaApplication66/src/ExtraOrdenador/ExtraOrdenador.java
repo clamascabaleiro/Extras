@@ -16,7 +16,7 @@ public class ExtraOrdenador {
         pepino.setKeyboard(62);
         pepino.setScreen("BenQ", 18.5f);
         pepino.visualizarAtributos();
-        JOptionPane.showMessageDialog(null, pepino.calcularPrecio());
+        JOptionPane.showMessageDialog(null, pepino.calcularPrecio() + "€");
     }
 
 }
